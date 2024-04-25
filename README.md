@@ -2,11 +2,15 @@
 
 **Author:** Shivang Joshi (Biocompute Lab, University of Bristol)
 
+## Overview
+
 The CHAD algorithm can be used to generate DNA sequences of highly similar, or identical proteins, such that they can be encoded multiple times within a single DNA contruct or host cell. Diversification helps to reduce the chance of homologous recombination and improves the robustness of the desired function.
 
 CHAD works by taking a set of amino acid sequences in a multi-FASTA format, codon to amino acid mapping and their frequencies to use during the diversification process (typically related to tRNA concentration in the host cell), as well as, parameters such as the threshold of similarity (i.e., longest stretch of homology across all generated sequences). CHAD uses a random sampling approaches to find candidate solutions for each amino acid sequence in turn. The resultant DNA sequences are then written to a multi-FASTA file using the same IDs as their linked amino acid sequence.
 
-As an example of how CHAD might be used, consider a protein called GFP that you need to encode in 4 different places within a genetic construct that will then be expressed in _E. coli_. The input multi-FASTA file will look like the following (all amino acid sequences are identical):
+## Usage
+
+To see how CHAD might be used, consider a protein called GFP that you need to encode in 4 different places within a genetic construct that will then be expressed in _E. coli_. The input multi-FASTA file will look like the following (all amino acid sequences are identical):
 ```
 >GFP_1
 MSKGEELFTGVVPILVELDGDVNGHKFSVS...
