@@ -28,4 +28,4 @@ python chad.py 18 ecoli-codon-data.csv gfp_aa.fasta gfp_dna.fasta
 ```
 This will create DNA sequences where there is a maximum homology of 18 bp between all the sequences.
 
-**Note:** You must have the `chad.py` script in your working directory or added to you `PATH`. Also, CHAD will not add stop codons to the DNA sequences. Need will need to be added manually or a `*` amino acid added to the mapping/frequency table.
+**Note:** You must have the `chad.py` script in your working directory or added to you `PATH`. Also, CHAD will not add stop codons to the DNA sequences. If required, you will need to add a `*` amino acid to the mapping/frequency table manually.
